@@ -6,6 +6,8 @@ public class FirstClass {
         mainExtended.Person("Michał","Ole",18,1.83,true);
 
 
-        System.out.println(mainExtended);
+
+
     }
+
 }
