@@ -5,6 +5,13 @@ public class Audi implements Car {
     private double increaseSpeed = 15.00;
     private double decreaseSpeed = 25.00;
 
+    public Audi(){
+
+    }
+    public Audi(int value){
+        increaseSpeed = value;
+    }
+
 
     @Override
     public double getSpeed() {
