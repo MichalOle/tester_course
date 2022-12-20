@@ -1,10 +1,10 @@
 package collections.arrays.homework;
 
 
-import collections.interfacesHomowork.Audi;
-import collections.interfacesHomowork.Car;
-import collections.interfacesHomowork.Fiat;
-import collections.interfacesHomowork.Opel;
+import collections.interfaces.interfacesHomowork.Audi;
+import collections.interfaces.interfacesHomowork.Car;
+import collections.interfaces.interfacesHomowork.Fiat;
+import collections.interfaces.interfacesHomowork.Opel;
 
 public class CarUtils {
     public static void describeCar(Car car) {

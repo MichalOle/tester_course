@@ -1,9 +1,9 @@
 package collections.arrays.homework;
 
-import collections.interfacesHomowork.Audi;
-import collections.interfacesHomowork.Car;
-import collections.interfacesHomowork.Fiat;
-import collections.interfacesHomowork.Opel;
+import collections.interfaces.interfacesHomowork.Audi;
+import collections.interfaces.interfacesHomowork.Car;
+import collections.interfaces.interfacesHomowork.Fiat;
+import collections.interfaces.interfacesHomowork.Opel;
 
 import java.util.Random;
 
@@ -15,7 +15,7 @@ public class CarApplication {
             cars[i] = drawCar();
         }
         for (Car car : cars) {
-            car.increaseSpeed();
+
             CarUtils.describeCar(car);
         }
     }

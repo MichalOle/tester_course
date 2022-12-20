@@ -1,4 +1,4 @@
-package collections.interfacesHomowork;
+package collections.interfaces.interfacesHomowork;
 
 public class CarRace {
     public static void main(String[] args) {
