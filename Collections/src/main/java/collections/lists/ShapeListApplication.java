@@ -4,6 +4,7 @@ import collections.interfaces.Circle;
 import collections.interfaces.Square;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ShapeListApplication {
@@ -21,6 +22,10 @@ public class ShapeListApplication {
             if(shape.getArea()>20)
                System.out.println(shape);
         }
-
+        List<Circle> crl = new LinkedList<>();
+        crl.add(new Circle(5));
+        for (Circle circle : crl) {
+            System.out.println(circle);
+        }
     }
 }
