@@ -1,4 +1,4 @@
-package Bank;
+package bank;
 
 public class Bank {
     private CashMachine[] listOfCashMachines;
@@ -17,7 +17,7 @@ public class Bank {
         this.listOfCashMachines = tempListOfCashMachines;
     }
 
-    public void getTotalSaldoOfAllCashMachines() {
+    public int totalSaldoOfAllCashMachines() {
         int total = 0;
         for (CashMachine listOfCashMachine : listOfCashMachines) {
             double initialSaldo = 10000;
@@ -28,9 +28,10 @@ public class Bank {
             total += initialSaldo + result;
         }
         System.out.println("Saldo wszystkich bankomatów wnosi łącznie " + total + " PLN.");
+        return total;
     }
 
-    public void getNumberOfDeposits() {
+    public int numberOfDeposits() {
         int total = 0;
         for (CashMachine listOfCashMachine : listOfCashMachines) {
             double[] listOfTransactions = listOfCashMachine.getListOfTransactions();
@@ -40,9 +41,10 @@ public class Bank {
             }
         }
         System.out.println("Dokonano " + total + " wpłat.");
+        return total;
     }
 
-    public void getNumberOfWithdraws() {
+    public int numberOfWithdraws() {
         int total = 0;
         for (CashMachine listOfCashMachine : listOfCashMachines) {
             double[] listOfTransactions = listOfCashMachine.getListOfTransactions();
@@ -52,8 +54,9 @@ public class Bank {
             }
         }
         System.out.println("Dokonano " + total + " wypłat.");
+        return total;
     }
-        public void getAverageOfDeposits(){
+        public double averageOfDeposits(){
             int total = 0;
             double sum= 0;
             for (CashMachine listOfCashMachine : listOfCashMachines) {
@@ -66,8 +69,9 @@ public class Bank {
                 }
             }
             System.out.println("Średnia wpłata do bankomatu to " + (sum/total) + " PLN.");
+            return sum/total;
         }
-    public void getAverageOfWithdraws(){
+    public double averageOfWithdraws(){
         int total = 0;
         double sum= 0;
         for (CashMachine listOfCashMachine : listOfCashMachines) {
@@ -80,6 +84,10 @@ public class Bank {
             }
         }
         System.out.println("Średnia wypłata z bankomatu to " + (sum/total) + " PLN.");
+        return sum/total;
     }
 
+    public CashMachine[] getListOfCashMachines(){
+        return listOfCashMachines;
+    }
 }

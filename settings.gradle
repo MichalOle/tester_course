@@ -3,4 +3,6 @@ include 'intro'
 include 'Collections'
 include 'AbstractionsAndInheritance'
 include 'Collections-advance'
+include 'stream'
+include 'intro'
 

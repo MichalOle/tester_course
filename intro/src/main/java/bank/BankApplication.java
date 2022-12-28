@@ -1,4 +1,4 @@
-package Bank;
+package bank;
 
 import java.util.Arrays;
 
@@ -26,10 +26,10 @@ public class BankApplication {
         System.out.println("--------------");
         bank.addCashMachine(cashMachine);
         bank.addCashMachine(cashMachine1);
-        bank.getNumberOfDeposits();
-        bank.getNumberOfWithdraws();
-        bank.getTotalSaldoOfAllCashMachines();
-        bank.getAverageOfDeposits();
-        bank.getAverageOfWithdraws();
+        bank.numberOfDeposits();
+        bank.numberOfWithdraws();
+        bank.totalSaldoOfAllCashMachines();
+        bank.averageOfDeposits();
+        bank.averageOfWithdraws();
     }
 }

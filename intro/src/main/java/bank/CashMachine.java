@@ -1,4 +1,4 @@
-package Bank;
+package bank;
 
 public class CashMachine {
     private double[] listOfTransactions;
@@ -10,11 +10,14 @@ public class CashMachine {
     }
 
     public void  addTransaction(double transaction){
+        if (transaction != 0) {
         this.size++;
         double tempTransaction[] = new double[this.size];
         System.arraycopy(listOfTransactions,0,tempTransaction,0,listOfTransactions.length);
-        tempTransaction[this.size -1] = transaction;
-        this.listOfTransactions = tempTransaction;
+            tempTransaction[this.size - 1] = transaction;
+            this.listOfTransactions = tempTransaction;
+        }else  System.out.println("Nie wprowadzono poprawnej kwoty.");
+
     }
 
     public void getSaldoOfCashMachine(){
