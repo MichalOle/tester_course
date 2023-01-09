@@ -5,4 +5,5 @@ include 'AbstractionsAndInheritance'
 include 'Collections-advance'
 include 'stream'
 include 'intro'
+include 'advanced_tests'
 
